@@ -12,6 +12,7 @@ gem "twitter-bootstrap-rails"
 gem "therubyracer"
 gem "less-rails"
 gem 'figaro'
+gem 'faraday'
 gem 'factory_girl_rails'
 gem 'database_cleaner'
 gem 'responders'
