@@ -1,4 +1,5 @@
-class Station < ActiveRecord::Base
+class Station
+  attr_reader :name, :address, :fuel_type, :access_times, :distance
 
   def initialize(params)
     @name         = params["station_name"]

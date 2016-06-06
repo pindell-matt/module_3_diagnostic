@@ -3,7 +3,7 @@ class SearchController < ApplicationController
   def index
     results = JSON.parse(search.body)
     @stations = results["fuel_stations"].map do |station|
-      OpenStruct.new(station)
+      Station.new(station)
     end
   end
 

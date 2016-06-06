@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.data.gov/nrel/alt-fuel-stations/v1.json?api_key=ttRf0e4JymfK05atNs8xiHEzc7QAHUzigZKTvAYF&fuel=LPG&limit=10&location=80203&private=false&radius_miles=6
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 06 Jun 2016 16:20:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '959'
+      Last-Modified:
+      - Mon, 06 Jun 2016 16:20:46 GMT
+      X-Request-Id:
+      - 1d829db5-d9d1-4e24-89f2-39f1a04bcdf2
+      X-Runtime:
+      - '0.124058'
+      Age:
+      - '0'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSfW]), http/1.1 api-umbrella
+        (ApacheTrafficServer [cMsSf ])
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Cache:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":25974,"station_counts":{"total":49017,"fuels":{"E85":{"total":3156},"ELEC":{"total":39288,"stations":{"total":16245}},"HY":{"total":93},"LNG":{"total":190},"BD":{"total":687},"CNG":{"total":1838},"LPG":{"total":3765}}},"fuel_stations":[{"access_days_time":"8am-5pm
+        M-F; call station to make arrangements","cards_accepted":"Cash Checks A D
+        M V","date_last_confirmed":"2016-04-04","expected_date":null,"fuel_type_code":"LPG","id":13392,"groups_with_access_code":"Public
+        - Call ahead","open_date":"2015-03-27","owner_type_code":"P","status_code":"E","station_name":"Suburban
+        Propane","station_phone":"518-489-3271","updated_at":"2016-04-04T18:11:07Z","geocode_status":"200-8","latitude":42.6972742,"longitude":-73.82593,"city":"Albany","intersection_directions":"Close
+        to NY Northway 87","plus4":null,"state":"NY","street_address":"76 Railroad
+        Ave","zip":"12205","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":false,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null},{"access_days_time":"8am-5pm
+        M-F","cards_accepted":"Cash M V","date_last_confirmed":"2015-08-04","expected_date":null,"fuel_type_code":"LPG","id":22392,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"Greenville
+        Automatic Gas Co","station_phone":"903-455-4546","updated_at":"2016-04-08T13:07:19Z","geocode_status":"200-8","latitude":33.1397067,"longitude":-96.0731216,"city":"Greenville","intersection_directions":"IH-30,
+        exit 96, 2 miles north","plus4":null,"state":"TX","street_address":"2393 FM
+        118","zip":"75401","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":true,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2015-10-06","expected_date":null,"fuel_type_code":"ELEC","id":43615,"groups_with_access_code":"Private
+        - Government only","open_date":"2012-03-01","owner_type_code":"LG","status_code":"E","station_name":"Miami
+        Dade County Fleet","station_phone":null,"updated_at":"2016-01-13T17:59:52Z","geocode_status":"200-8","latitude":25.775185,"longitude":-80.1980729,"city":"Miami","intersection_directions":null,"plus4":null,"state":"FL","street_address":"201
+        NW 1st St","zip":"33128","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2015-12-02","expected_date":null,"fuel_type_code":"E85","id":28999,"groups_with_access_code":"Private
+        - Government only","open_date":"2007-06-15","owner_type_code":"LG","status_code":"E","station_name":"Town
+        of Chapel Hill","station_phone":null,"updated_at":"2016-01-13T18:00:45Z","geocode_status":"200-8","latitude":35.9774112,"longitude":-79.0763522,"city":"Chapel
+        Hill","intersection_directions":null,"plus4":null,"state":"NC","street_address":"6836
+        Millhouse Rd","zip":"27516","bd_blends":null,"e85_blender_pump":false,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2016-06-06","expected_date":null,"fuel_type_code":"ELEC","id":72977,"groups_with_access_code":"Private","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Park
+        3 Station C","station_phone":"888-998-2546","updated_at":"2016-06-06T10:00:07Z","geocode_status":"GPS","latitude":45.5402758683,"longitude":-122.9141170942,"city":"Hillsboro","intersection_directions":null,"plus4":null,"state":"OR","street_address":"2501  NW
+        229th Ave","zip":"97124","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"GE
+        WattStation","ev_network_web":"https://www.gewattstation.com","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["180150G01001070000"]}},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2016-05-09","expected_date":null,"fuel_type_code":"CNG","id":75312,"groups_with_access_code":"Private","open_date":"2016-04-20","owner_type_code":"P","status_code":"E","station_name":"Burrtec
+        Waste","station_phone":null,"updated_at":"2016-05-09T13:40:29Z","geocode_status":"200-8","latitude":34.1101752,"longitude":-117.2437847,"city":"San
+        Bernardino","intersection_directions":null,"plus4":null,"state":"CA","street_address":"26009
+        6th St","zip":"92410","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":"Q","ng_psi":"3600","ng_vehicle_class":"HD"},{"access_days_time":null,"cards_accepted":null,"date_last_confirmed":"2016-04-04","expected_date":null,"fuel_type_code":"ELEC","id":74644,"groups_with_access_code":"Private","open_date":"2016-03-01","owner_type_code":"P","status_code":"E","station_name":"United
+        Parcel Service","station_phone":null,"updated_at":"2016-04-04T18:19:17Z","geocode_status":"200-9","latitude":37.5982404,"longitude":-120.9721603,"city":"Ceres","intersection_directions":null,"plus4":null,"state":"CA","street_address":"1400
+        Hil-Mor Dr","zip":"95307","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":10,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null},{"access_days_time":"24
+        hours daily","cards_accepted":"A D M V GasCard Voyager Wright_Exp","date_last_confirmed":"2016-04-06","expected_date":null,"fuel_type_code":"E85","id":26070,"groups_with_access_code":"Public
+        - Credit card at all times","open_date":"2004-11-15","owner_type_code":"P","status_code":"E","station_name":"First
+        Co-op Association","station_phone":"712-282-4218","updated_at":"2016-04-06T17:26:09Z","geocode_status":"200-8","latitude":42.4768898,"longitude":-95.4169729,"city":"Galva","intersection_directions":"Highway
+        20/County M-25","plus4":null,"state":"IA","street_address":"1583 Market Ave","zip":"51020","bd_blends":null,"e85_blender_pump":false,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null},{"access_days_time":"24
+        hours daily; EVgo network subscription and key fob required","cards_accepted":null,"date_last_confirmed":"2016-06-06","expected_date":null,"fuel_type_code":"ELEC","id":73708,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Newpark
+        Resort - North Lot","station_phone":"877-455-3833","updated_at":"2016-06-06T09:51:35Z","geocode_status":"GPS","latitude":40.7223777770996,"longitude":-111.538955688477,"city":"Park
+        City","intersection_directions":null,"plus4":null,"state":"UT","street_address":"1456
+        Newpark Blvd","zip":"84098","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"eVgo
+        Network","ev_network_web":"https://www.evgonetwork.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["eVgoSA648"]}},{"access_days_time":"8am-5pm
+        M-F","cards_accepted":"Cash D M V","date_last_confirmed":"2015-10-06","expected_date":null,"fuel_type_code":"LPG","id":47248,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"Pendleton
+        Oil & Gas Co","station_phone":"505-426-9999","updated_at":"2016-01-13T17:59:48Z","geocode_status":"200-8","latitude":35.580604,"longitude":-105.2182206,"city":"Las
+        Vegas","intersection_directions":null,"plus4":null,"state":"NM","street_address":"220
+        S Grand Ave","zip":"87701","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":false,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null}]}'
+    http_version: 
+  recorded_at: Mon, 06 Jun 2016 16:21:05 GMT
+recorded_with: VCR 3.0.3
