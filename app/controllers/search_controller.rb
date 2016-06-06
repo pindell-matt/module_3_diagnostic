@@ -1,14 +1,14 @@
 class SearchController < ApplicationController
 
   def index
-    require "pry"
-    binding.pry
+    results = JSON.parse(search.body)
+    @stations = results["fuel_stations"]
   end
 
   private
 
     def connection
-      url = "https://api.data.gov/nrel/alt-fuel-stations/v1.json?limit=6&api_key=#{ENV['API_KEY']}"
+      url = 'https://api.data.gov/nrel/alt-fuel-stations/v1.json'
       Faraday.new(url: url)
     end
 
@@ -17,6 +17,14 @@ class SearchController < ApplicationController
     end
 
     def search
-      get 'https://api.data.gov/nrel/alt-fuel-stations/v1.json?api_key=ttRf0e4JymfK05atNs8xiHEzc7QAHUzigZKTvAYF&limit=6&location=80202&fuel=ELEC&&fuel=LPG&private=false&owner=all&radius=false&radius_miles=6'
+      connection.get do |req|
+        req.params['api_key']      = ENV['API_KEY']
+        req.params['limit']        = 1
+        req.params['location']     = search_params['q']
+        req.params['fuel']         = 'ELEC'
+        req.params['fuel']         = 'LPG'
+        req.params['private']      = false
+        req.params['radius_miles'] = 6
+      end
     end
 end
