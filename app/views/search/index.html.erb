@@ -1,11 +1,29 @@
 <h1>Search Results</h1>
 
+<!-- <ol>
+  <div class="results">
+    <% @stations.each do |station| %>
+      <li>
+        Name: <%= station.station_name %><br>
+        Address: <%= station.street_address %>, <%= station.city %> <%= station.zip %><br>
+        Fuel Type: <%= station.fuel_type_code %><br>
+        Access Times: <%= station.access_days_time %><br>
+        Distance: TBD<br>
+      </li>
+    <% end %>
+  </div>
+</ol> -->
+
 <ol>
   <div class="results">
-    <li>
-      <% @stations.each do |station| %>
-        <%= station %>
-      <% end %>
-    </li>
+    <% @stations.each do |station| %>
+      <li>
+        Name: <%= station.name %><br>
+        Address: <%= station.address %>
+        Fuel Type: <%= station.fuel_type %><br>
+        Access Times: <%= station.access_times %><br>
+        Distance: <%= station.distance %><br>
+      </li>
+    <% end %>
   </div>
 </ol>

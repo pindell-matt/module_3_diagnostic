@@ -2,7 +2,9 @@ class SearchController < ApplicationController
 
   def index
     results = JSON.parse(search.body)
-    @stations = results["fuel_stations"]
+    @stations = results["fuel_stations"].map do |station|
+      OpenStruct.new(station)
+    end
   end
 
   private
@@ -19,7 +21,7 @@ class SearchController < ApplicationController
     def search
       connection.get do |req|
         req.params['api_key']      = ENV['API_KEY']
-        req.params['limit']        = 1
+        req.params['limit']        = 10
         req.params['location']     = search_params['q']
         req.params['fuel']         = 'ELEC'
         req.params['fuel']         = 'LPG'
